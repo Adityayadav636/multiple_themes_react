@@ -1,0 +1,67 @@
+/* App.css */
+.content-container {
+  padding: 50px;
+}
+
+.hero-section {
+  padding-right: 50px;
+}
+
+.hero-section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  
+}
+
+.hero-section-desc {
+  font-size: 1rem;
+}
+
+.select-theme-heading {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.theme-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.theme-btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Define your custom theme colors here */
+.light-theme {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+.sea-theme {
+  background-color: #2e8b57;
+  color: #fff;
+}
+
+.sharp-theme {
+  background-color: #ff6347;
+  color: #fff;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
