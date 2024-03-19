@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./App.css"; // Import custom CSS file
 // You can add any necessary CSS styles in App.css
 
@@ -6,7 +6,16 @@ function App() {
   // Function to handle theme change
   const handleThemeChange = (theme) => {
     document.body.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme); // Store the theme in localStorage
   };
+
+  // Function to load the theme from localStorage
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      document.body.setAttribute("data-theme", storedTheme);
+    }
+  }, []);
 
   return (
     <div className="content-container">
